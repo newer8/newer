@@ -1,0 +1,18 @@
+
+server:
+  port: 8086
+  servlet:
+    context-path:
+spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://127.0.0.1:3306/hospital?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org.springframework.data: DEBUG
